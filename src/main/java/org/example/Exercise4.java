@@ -15,7 +15,6 @@ public class Exercise4 {
         String directory = "src" + File.separator + "main" + File.separator + "resources";
         String outputFilePath = "output.txt";
 
-        // Llista l'arbre de directoris i guarda el resultat en un fitxer
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath));
             listDirectoryTree(directory, 0, writer);
@@ -24,8 +23,7 @@ public class Exercise4 {
         } catch (IOException e) {
             System.out.println("An error occurred while writing to the file: " + e.getMessage());
         }
-
-        // Llegir un fitxer TXT i mostrar el contingut
+        
         String filePath = "src" + File.separator + "main" + File.separator + "resources" + File.separator + "exercici4.txt"; // Modifica amb el nom del teu fitxer
         readTextFile(filePath);
     }

@@ -25,7 +25,6 @@ public class Exercise2 {
                     String lastModified = lastModification.format(currentFile.lastModified());
                     System.out.println("  ".repeat(level) + type + " " + file + " (Last Modified: " + lastModified + ")");
 
-                    // Crida recursiva (nota personal)
                     if (currentFile.isDirectory()) {
                         listDirectoryTree(currentFile.getAbsolutePath(), level + 1);
                     }

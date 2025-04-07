@@ -9,6 +9,7 @@ public class Exercise1 {
 
         String directory = "src" + File.separator + "main" + File.separator + "resources";
         alphabeticallyOrderedList(directory);
+
     }
 
     public static void alphabeticallyOrderedList(String directory) {

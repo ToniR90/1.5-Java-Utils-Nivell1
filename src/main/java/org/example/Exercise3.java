@@ -35,7 +35,6 @@ public class Exercise3 {
                     SimpleDateFormat lastModification = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
                     String lastModified = lastModification.format(currentFile.lastModified());
 
-                    // Escriu al fitxer en comptes d'imprimir a la consola(nota personal)
                     try {
                         writer.write("  ".repeat(level) + type + " " + file + " (Last Modified: " + lastModified + ")");
                         writer.newLine();
@@ -43,7 +42,6 @@ public class Exercise3 {
                         System.out.println("An error occurred while writing to the file: " + e.getMessage());
                     }
 
-                    // Crida recursiva(nota personal)
                     if (currentFile.isDirectory()) {
                         listDirectoryTree(currentFile.getAbsolutePath(), level + 1, writer);
                     }
